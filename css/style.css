@@ -1,0 +1,1097 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  overflow-x: hidden;
+  font-family: "Inter Tight", sans-serif; }
+
+hr {
+  border-color: #bcd3eb;
+  border-width: 1px; }
+
+/*Input field signup, login*/
+.username::before {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 1.5rem;
+  top: 30%;
+  background-position: center;
+  height: 1.5rem;
+  left: 3%;
+  background-image: url(../images/svg/username.svg); }
+
+.email::before {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 1.5rem;
+  top: 30%;
+  background-position: center;
+  height: 1.5rem;
+  left: 3%;
+  background-image: url(../images/svg/email.svg); }
+
+.password::before {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 1.5rem;
+  top: 30%;
+  background-position: center;
+  height: 1.5rem;
+  left: 3%;
+  background-image: url(../images/svg/password.svg); }
+
+/*Cards Task Summary*/
+.projects {
+  padding: 1rem 1.5rem;
+  text-align: center;
+  border-radius: 0.8rem;
+  background-color: #2563EB; }
+
+.assigned {
+  padding: 1rem 1.5rem;
+  text-align: center;
+  border-radius: 0.8rem;
+  background-color: #38BDF8; }
+
+.closed {
+  padding: 1rem 1.5rem;
+  text-align: center;
+  border-radius: 0.8rem;
+  background-color: #F8FAFC; }
+
+.sign-up-page {
+  height: calc(100vh - 0px); }
+  .sign-up-page .blue-div {
+    background-color: #2563EB;
+    height: calc(100vh - 0px);
+    padding: 3rem; }
+    .sign-up-page .blue-div .banner-text h3 {
+      margin: 0;
+      font-family: "Inter Tight", sans-serif;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 0.1rem; }
+    .sign-up-page .blue-div .banner-text p {
+      margin: 0;
+      padding-top: 0.8rem;
+      font-family: "Inter Tight", sans-serif;
+      font-style: normal;
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: #ffffff; }
+  .sign-up-page .banner-img {
+    margin-top: 3.2rem; }
+  .sign-up-page .white-div {
+    background-color: #ffffff;
+    padding: 3.1rem 15rem; }
+    .sign-up-page .white-div h3 {
+      font-family: "Inter Tight", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.02rem;
+      padding-bottom: 3rem; }
+    .sign-up-page .white-div form .form-control {
+      outline: none;
+      border: none;
+      position: relative;
+      padding: .375rem 0; }
+      .sign-up-page .white-div form .form-control.password p {
+        font-family: "Inter Tight", sans-serif;
+        font-style: normal;
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: #64748B;
+        padding: 0;
+        margin: 0;
+        padding-top: 15px; }
+      .sign-up-page .white-div form .form-control.password:before {
+        top: 20%; }
+      .sign-up-page .white-div form .form-control.password:after {
+        content: '';
+        position: absolute;
+        background-image: url(../images/svg/hide.svg);
+        background-repeat: no-repeat;
+        width: 1.5rem;
+        top: 20%;
+        background-position: center;
+        height: 1.5rem;
+        right: 5%; }
+      .sign-up-page .white-div form .form-control input {
+        outline: none;
+        border: none;
+        border: 1px solid #E2E8F0;
+        padding: 0;
+        padding: 0.5rem 3rem;
+        width: 100%;
+        height: 3.5rem;
+        line-height: 3.5rem;
+        border-radius: 0.8rem;
+        font-family: "Inter Tight", sans-serif;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.2px; }
+        .sign-up-page .white-div form .form-control input::placeholder {
+          font-family: "Inter Tight", sans-serif;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 400;
+          color: #94A3B8; }
+        .sign-up-page .white-div form .form-control input:focus {
+          border: 1px solid #ED4F9D; }
+    .sign-up-page .white-div form .checkbox-div {
+      display: flex;
+      justify-content: flex-start;
+      align-items: self-start;
+      gap: 15px;
+      padding: 1.5rem 0.75rem; }
+      .sign-up-page .white-div form .checkbox-div input[type="checkbox"] {
+        width: 1.4rem;
+        height: 1.4rem;
+        padding-top: 10px; }
+      .sign-up-page .white-div form .checkbox-div label {
+        font-family: "Inter Tight", sans-serif;
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 400;
+        color: #64748B;
+        max-width: 60%;
+        width: 100%; }
+        .sign-up-page .white-div form .checkbox-div label a {
+          text-decoration: none;
+          color: #000000;
+          font-weight: 700; }
+    .sign-up-page .white-div form .button-div {
+      padding: 0.5rem 0 2rem 0; }
+      .sign-up-page .white-div form .button-div .btn-signup {
+        width: 100%;
+        height: 3.4rem;
+        padding: 0.5rem;
+        display: block;
+        background-color: #2563EB;
+        font-family: "Inter Tight", sans-serif;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        color: #ffffff;
+        border-radius: 0.8rem;
+        letter-spacing: .03rem; }
+    .sign-up-page .white-div .other-signup-option-div {
+      position: relative; }
+      .sign-up-page .white-div .other-signup-option-div .other-text-div {
+        position: relative; }
+        .sign-up-page .white-div .other-signup-option-div .other-text-div p {
+          font-family: "Inter Tight", sans-serif;
+          font-style: normal;
+          font-size: 0.8rem;
+          font-weight: 400;
+          color: #64748B;
+          text-align: center;
+          padding: 0;
+          margin: 0; }
+          .sign-up-page .white-div .other-signup-option-div .other-text-div p::before {
+            content: '';
+            position: absolute;
+            max-width: 35%;
+            width: 100%;
+            height: 1px;
+            background: #E2E8F0;
+            top: 50%;
+            left: 0; }
+          .sign-up-page .white-div .other-signup-option-div .other-text-div p::after {
+            content: '';
+            position: absolute;
+            max-width: 35%;
+            width: 100%;
+            height: 1px;
+            background: #E2E8F0;
+            top: 50%;
+            right: 0; }
+    .sign-up-page .white-div .signup-option-btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      gap: 20px;
+      padding: 2rem; }
+      .sign-up-page .white-div .signup-option-btn .google-div {
+        text-align: center;
+        width: 50%; }
+        .sign-up-page .white-div .signup-option-btn .google-div a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 3.5rem;
+          border: 1px solid #E2E8F0;
+          font-family: "Inter Tight", sans-serif;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 600;
+          color: #000000;
+          text-decoration: none;
+          width: 100%;
+          border-radius: 0.8rem; }
+          .sign-up-page .white-div .signup-option-btn .google-div a svg {
+            margin-right: 1rem; }
+      .sign-up-page .white-div .signup-option-btn .facebook-div {
+        text-align: center;
+        width: 50%; }
+        .sign-up-page .white-div .signup-option-btn .facebook-div a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 3.5rem;
+          border: 1px solid #E2E8F0;
+          font-family: "Inter Tight", sans-serif;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 600;
+          color: #000000;
+          text-decoration: none;
+          width: 100%;
+          border-radius: 0.8rem; }
+          .sign-up-page .white-div .signup-option-btn .facebook-div a svg {
+            margin-right: 1rem; }
+    .sign-up-page .white-div .log-in-div p {
+      font-family: "Inter Tight", sans-serif;
+      font-style: normal;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #0F172A; }
+    .sign-up-page .white-div .log-in-div a {
+      text-decoration: none;
+      color: #2563EB;
+      font-weight: 700; }
+
+/*Media Queries*/
+/*2xl*/
+@media (min-width: 1536px) {
+  .sign-up-page .white-div {
+    padding: 3.1rem 15rem; } }
+
+/*xl*/
+@media (min-width: 1280px) {
+  .sign-up-page {
+    overflow-y: hidden; }
+    .sign-up-page .blue-div {
+      height: calc(100vh - 0px); }
+    .sign-up-page .banner-img .swiper-slide img {
+      width: 80%; } }
+
+/*lg*/
+/*md*/
+/*sm*/
+@media (max-width: 640px) {
+  .sign-up-page .blue-div {
+    height: calc(100vh - 0px);
+    padding: 3rem 1rem; }
+    .sign-up-page .blue-div .banner-text h3 {
+      font-size: 1.1rem; }
+  .sign-up-page .white-div {
+    padding: 2.5rem 1rem; }
+    .sign-up-page .white-div form .checkbox-div label {
+      max-width: 100%;
+      width: 100%; }
+    .sign-up-page .white-div .signup-option-btn {
+      padding: 2rem 0; } }
+
+/*xs*/
+@media (max-width: 475px) {
+  .sign-up-page .blue-div {
+    height: 100vh; }
+  .sign-up-page .white-div {
+    padding: 2.5rem 5rem; } }
+
+.sign-in-page .white-div .white-text h3 {
+  padding-bottom: 0; }
+
+.sign-in-page .white-div .white-text p {
+  font-family: "Inter Tight", sans-serif;
+  font-style: normal;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #64748B;
+  padding-top: 0.8rem; }
+
+.sign-in-page .white-div form .password-bottom-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .sign-in-page .white-div form .password-bottom-div .checkbox-div {
+    width: 100%; }
+    .sign-in-page .white-div form .password-bottom-div .checkbox-div label {
+      font-family: "Inter Tight", sans-serif;
+      font-style: normal;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #0F172A; }
+  .sign-in-page .white-div form .password-bottom-div .forgot-password {
+    width: 100%;
+    text-align: right; }
+    .sign-in-page .white-div form .password-bottom-div .forgot-password a {
+      font-family: "Inter Tight", sans-serif;
+      font-style: normal;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #2563EB;
+      text-decoration: none; }
+
+.sign-in-page .white-div form .form-control.password::before {
+  top: 30%; }
+
+.forgot-password .white-div h3 {
+  padding-bottom: 0;
+  padding-bottom: 12px; }
+
+.forgot-password .white-div form .button-div .btn-back-sign-up {
+  font-size: 0.9rem;
+  font-family: "Inter Tight", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #2563EB;
+  text-align: center;
+  width: 100%;
+  padding: 25px 0;
+  outline: none;
+  border: none; }
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 240px;
+  background: #ffffff;
+  transition: all 0.5s ease;
+  padding: 1rem; }
+  .sidebar.active {
+    width: 60px; }
+    .sidebar.active .links_name {
+      display: none; }
+    .sidebar.active ~ .home-section {
+      width: calc(100% - 60px);
+      left: 60px; }
+      .sidebar.active ~ .home-section nav {
+        left: 60px;
+        width: calc(100% - 60px); }
+  .sidebar .logo-details {
+    height: 3.75rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem; }
+    .sidebar .logo-details i {
+      font-size: 1.75rem;
+      font-weight: 500;
+      color: #fff;
+      min-width: 3.75rem;
+      text-align: center; }
+    .sidebar .logo-details span.logo_name {
+      color: #2563EB;
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-family: "Inter Tight", sans-serif;
+      font-style: normal; }
+  .sidebar .nav-links {
+    margin-top: 0.625rem;
+    padding: 0; }
+    .sidebar .nav-links li {
+      position: relative;
+      list-style: none;
+      height: 3.125rem; }
+      .sidebar .nav-links li a {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        transition: all 0.4s ease;
+        border-radius: 0.8rem; }
+        .sidebar .nav-links li a:hover {
+          background: #F8FAFC; }
+        .sidebar .nav-links li a .links_name {
+          color: #64748B;
+          font-size: 0.9rem;
+          font-weight: 500;
+          white-space: nowrap; }
+      .sidebar .nav-links li a.active {
+        background: #F8FAFC; }
+        .sidebar .nav-links li a.active i {
+          color: #2563EB; }
+      .sidebar .nav-links li i {
+        min-width: 60px;
+        text-align: center;
+        font-size: 1.4rem;
+        color: #64748B; }
+  .sidebar .log_out {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+    .sidebar .log_out li {
+      list-style: none; }
+      .sidebar .log_out li a {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        transition: all 0.4s ease;
+        border-radius: 0.8rem;
+        padding: 0.8rem 0; }
+        .sidebar .log_out li a i {
+          min-width: 60px;
+          text-align: center;
+          font-size: 1.4rem;
+          color: #64748B; }
+        .sidebar .log_out li a .links_name {
+          color: #64748B;
+          font-size: 0.9rem;
+          font-weight: 500;
+          white-space: nowrap; }
+
+.home-section {
+  position: relative;
+  background: #ffffff;
+  min-height: 100vh;
+  width: calc(100% - 240px);
+  left: 15rem;
+  transition: all 0.5s ease; }
+  .home-section .main-content header .right-site {
+    padding: 1rem; }
+    .home-section .main-content header .right-site .sidebar-button {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 10px; }
+      .home-section .main-content header .right-site .sidebar-button i {
+        font-size: 2.187rem;
+        margin-right: 0.6rem; }
+      .home-section .main-content header .right-site .sidebar-button .sidebarBtn {
+        font-size: 1.8rem; }
+      .home-section .main-content header .right-site .sidebar-button .dashboard-text {
+        font-family: "Inter Tight", sans-serif;
+        font-style: normal;
+        font-size: 1.4rem;
+        font-weight: 700; }
+    .home-section .main-content header .right-site .inner-div-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .home-section .main-content header .right-site .inner-div-wrapper .search-bar {
+        position: relative;
+        width: 50%; }
+        .home-section .main-content header .right-site .inner-div-wrapper .search-bar input {
+          width: 100%;
+          padding: 15px 20px 15px 40px;
+          position: relative;
+          outline: none;
+          border: none;
+          border: 1px solid #E2E8F0;
+          border-radius: 0.8rem;
+          color: #000000;
+          font-weight: 700; }
+          .home-section .main-content header .right-site .inner-div-wrapper .search-bar input::placeholder {
+            font-weight: 400; }
+        .home-section .main-content header .right-site .inner-div-wrapper .search-bar img {
+          position: absolute;
+          left: 5%;
+          top: 50%;
+          transform: translateY(-50%); }
+      .home-section .main-content header .right-site .inner-div-wrapper .notification {
+        width: 20%; }
+        .home-section .main-content header .right-site .inner-div-wrapper .notification .profile-div {
+          outline: none;
+          border: none;
+          width: 100%;
+          justify-content: center;
+          align-items: center; }
+      .home-section .main-content header .right-site .inner-div-wrapper .profile-wrapper {
+        width: 30%; }
+        .home-section .main-content header .right-site .inner-div-wrapper .profile-wrapper .dropdown {
+          width: 100%;
+          outline: none;
+          border: none; }
+          .home-section .main-content header .right-site .inner-div-wrapper .profile-wrapper .dropdown .profile-div {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left; }
+            .home-section .main-content header .right-site .inner-div-wrapper .profile-wrapper .dropdown .profile-div:active, .home-section .main-content header .right-site .inner-div-wrapper .profile-wrapper .dropdown .profile-div:focus {
+              outline: none;
+              border: none; }
+            .home-section .main-content header .right-site .inner-div-wrapper .profile-wrapper .dropdown .profile-div .profile-text:after {
+              -webkit-appearance: none;
+              appearance: none; }
+            .home-section .main-content header .right-site .inner-div-wrapper .profile-wrapper .dropdown .profile-div .profile-text h4 {
+              font-family: "Inter Tight", sans-serif;
+              font-style: normal;
+              font-size: 0.9rem;
+              font-weight: 700;
+              padding: 0;
+              margin: 0;
+              color: #0F172A; }
+            .home-section .main-content header .right-site .inner-div-wrapper .profile-wrapper .dropdown .profile-div .profile-text p {
+              font-family: "Inter Tight", sans-serif;
+              font-style: normal;
+              font-size: 0.8rem;
+              font-weight: 700;
+              color: #64748B;
+              padding: 0;
+              margin: 0; }
+  .home-section .main-content header .blue-div {
+    background-color: #F8FAFC;
+    padding: 1rem; }
+    .home-section .main-content header .blue-div .recent-project-div {
+      background-color: #ffffff;
+      padding: 1.5rem 1.25rem;
+      border-radius: 0.8rem; }
+      .home-section .main-content header .blue-div .recent-project-div h3 {
+        font-family: "Inter Tight", sans-serif;
+        font-style: normal;
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 0; }
+      .home-section .main-content header .blue-div .recent-project-div .project-card {
+        background-color: #F8FAFC;
+        border-radius: 0.8rem;
+        padding: 1.875rem 1.25rem; }
+        .home-section .main-content header .blue-div .recent-project-div .project-card .title-bar {
+          padding-bottom: 1rem; }
+          .home-section .main-content header .blue-div .recent-project-div .project-card .title-bar h3 {
+            font-family: "Inter Tight", sans-serif;
+            font-style: normal;
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0; }
+          .home-section .main-content header .blue-div .recent-project-div .project-card .title-bar .dropdown .recent-div {
+            outline: none;
+            border: none;
+            text-align: right;
+            padding: 0; }
+            .home-section .main-content header .blue-div .recent-project-div .project-card .title-bar .dropdown .recent-div:active, .home-section .main-content header .blue-div .recent-project-div .project-card .title-bar .dropdown .recent-div:focus {
+              outline: none;
+              border: none; }
+        .home-section .main-content header .blue-div .recent-project-div .project-card .progress-div .label-text {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 0.6rem; }
+          .home-section .main-content header .blue-div .recent-project-div .project-card .progress-div .label-text .progress-txt {
+            font-family: "Inter Tight", sans-serif;
+            font-style: normal;
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: #64748B; }
+          .home-section .main-content header .blue-div .recent-project-div .project-card .progress-div .label-text .progress-value {
+            font-family: "Inter Tight", sans-serif;
+            font-style: normal;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #0F172A; }
+        .home-section .main-content header .blue-div .recent-project-div .project-card .progress-div progress {
+          width: 100%;
+          height: 0.55rem;
+          border: 0;
+          border-radius: 5rem; }
+          .home-section .main-content header .blue-div .recent-project-div .project-card .progress-div progress#file1::-webkit-progress-bar {
+            background-color: #E2E8F0;
+            border-radius: 5rem; }
+          .home-section .main-content header .blue-div .recent-project-div .project-card .progress-div progress#file1::-webkit-progress-value {
+            background-color: #2563EB;
+            border-radius: 5rem; }
+          .home-section .main-content header .blue-div .recent-project-div .project-card .progress-div progress#file2::-webkit-progress-bar {
+            background-color: #E2E8F0;
+            border-radius: 5rem; }
+          .home-section .main-content header .blue-div .recent-project-div .project-card .progress-div progress#file2::-webkit-progress-value {
+            background-color: #F472B6;
+            border-radius: 5rem; }
+          .home-section .main-content header .blue-div .recent-project-div .project-card .progress-div progress#file3::-webkit-progress-bar {
+            background-color: #E2E8F0;
+            border-radius: 5rem; }
+          .home-section .main-content header .blue-div .recent-project-div .project-card .progress-div progress#file3::-webkit-progress-value {
+            background-color: #FBBF24;
+            border-radius: 5rem; }
+        .home-section .main-content header .blue-div .recent-project-div .project-card .last-selection-div {
+          padding: 0.95rem 0;
+          display: flex;
+          justify-content: space-between; }
+          .home-section .main-content header .blue-div .recent-project-div .project-card .last-selection-div .input-wrapper label span {
+            font-family: "Inter Tight", sans-serif;
+            font-style: normal;
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: #64748B; }
+          .home-section .main-content header .blue-div .recent-project-div .project-card .last-selection-div .task-img-multiple {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 35%; }
+            .home-section .main-content header .blue-div .recent-project-div .project-card .last-selection-div .task-img-multiple .first-img {
+              position: relative; }
+              .home-section .main-content header .blue-div .recent-project-div .project-card .last-selection-div .task-img-multiple .first-img img {
+                width: 30px; }
+            .home-section .main-content header .blue-div .recent-project-div .project-card .last-selection-div .task-img-multiple .second-img {
+              position: absolute;
+              left: 55%; }
+              .home-section .main-content header .blue-div .recent-project-div .project-card .last-selection-div .task-img-multiple .second-img img {
+                width: 30px; }
+            .home-section .main-content header .blue-div .recent-project-div .project-card .last-selection-div .task-img-multiple .third-img {
+              position: absolute;
+              right: -5%; }
+              .home-section .main-content header .blue-div .recent-project-div .project-card .last-selection-div .task-img-multiple .third-img img {
+                width: 30px; }
+    .home-section .main-content header .blue-div .activity-row {
+      margin-top: 1.2rem; }
+      .home-section .main-content header .blue-div .activity-row .activity-graph {
+        background-color: #fff;
+        border-radius: 0.8rem;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .home-section .main-content header .blue-div .activity-row .activity-graph h3 {
+          font-family: "Inter Tight", sans-serif;
+          font-style: normal;
+          font-size: 1rem;
+          font-weight: 700;
+          color: #0F172A;
+          padding: 0;
+          margin: 0; }
+        .home-section .main-content header .blue-div .activity-row .activity-graph .activity-dropdown .dropdown .activity-div {
+          font-family: "Inter Tight", sans-serif;
+          font-style: normal;
+          font-size: 0.8rem;
+          font-weight: 500;
+          color: #2563EB;
+          outline: none;
+          border: none; }
+      .home-section .main-content header .blue-div .activity-row .highcharts-figure {
+        min-width: 310px;
+        max-width: 800px; }
+        .home-section .main-content header .blue-div .activity-row .highcharts-figure .highcharts-data-table table {
+          min-width: 310px;
+          max-width: 800px; }
+        .home-section .main-content header .blue-div .activity-row .highcharts-figure .highcharts-data-table table {
+          border-collapse: collapse;
+          border: 1px solid #ebebeb;
+          margin: 10px auto;
+          text-align: center;
+          width: 100%;
+          max-width: 500px; }
+        .home-section .main-content header .blue-div .activity-row .highcharts-figure .highcharts-data-table caption {
+          padding: 1em 0;
+          font-size: 1.2em;
+          color: #555; }
+        .home-section .main-content header .blue-div .activity-row .highcharts-figure .highcharts-data-table th {
+          font-weight: 600;
+          padding: 0.5em; }
+        .home-section .main-content header .blue-div .activity-row .highcharts-figure .highcharts-data-table td,
+        .home-section .main-content header .blue-div .activity-row .highcharts-figure .highcharts-data-table th,
+        .home-section .main-content header .blue-div .activity-row .highcharts-figure .highcharts-data-table caption {
+          padding: 0.5em; }
+        .home-section .main-content header .blue-div .activity-row .highcharts-figure .highcharts-data-table thead tr,
+        .home-section .main-content header .blue-div .activity-row .highcharts-figure .highcharts-data-table tr:nth-child(even) {
+          background: #f8f8f8; }
+        .home-section .main-content header .blue-div .activity-row .highcharts-figure .highcharts-data-table tr:hover {
+          background: #f1f7ff; }
+      .home-section .main-content header .blue-div .activity-row .task-summary-wrapper {
+        background-color: #ffffff;
+        padding: 1rem;
+        border-radius: 0.8rem; }
+        .home-section .main-content header .blue-div .activity-row .task-summary-wrapper .task-summary-div {
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          .home-section .main-content header .blue-div .activity-row .task-summary-wrapper .task-summary-div h3 {
+            font-family: "Inter Tight", sans-serif;
+            font-style: normal;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #0F172A;
+            padding: 0;
+            margin: 0; }
+        .home-section .main-content header .blue-div .activity-row .task-summary-wrapper .task-cards-wrapper {
+          display: flex;
+          justify-content: center;
+          gap: 1.5rem;
+          padding: 2rem 0; }
+          .home-section .main-content header .blue-div .activity-row .task-summary-wrapper .task-cards-wrapper .task-card img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            padding-bottom: 0.85rem; }
+          .home-section .main-content header .blue-div .activity-row .task-summary-wrapper .task-cards-wrapper .task-card .task-content h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0;
+            margin: 0;
+            padding-top: 0.7rem;
+            color: #ffffff; }
+          .home-section .main-content header .blue-div .activity-row .task-summary-wrapper .task-cards-wrapper .task-card .task-content h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0;
+            margin: 0;
+            padding-top: 0.7rem;
+            color: #ffffff; }
+          .home-section .main-content header .blue-div .activity-row .task-summary-wrapper .task-cards-wrapper .task-card .task-content.closed-content h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0;
+            margin: 0;
+            padding-top: 0.7rem;
+            color: #0F172A; }
+          .home-section .main-content header .blue-div .activity-row .task-summary-wrapper .task-cards-wrapper .task-card .task-content.closed-content h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0;
+            margin: 0;
+            padding-top: 0.7rem;
+            color: #0F172A; }
+        .home-section .main-content header .blue-div .activity-row .task-summary-wrapper .completion-rate-div .rate-content p {
+          font-family: "Inter Tight", sans-serif;
+          font-style: normal;
+          font-size: 0.8rem;
+          font-weight: 400;
+          color: #64748B; }
+        .home-section .main-content header .blue-div .activity-row .task-summary-wrapper .completion-rate-div .rate-content h2 {
+          font-family: "Inter Tight", sans-serif;
+          font-style: normal;
+          font-size: 1.5rem;
+          color: #0F172A;
+          font-weight: 700; }
+          .home-section .main-content header .blue-div .activity-row .task-summary-wrapper .completion-rate-div .rate-content h2 sub {
+            font-family: "Inter Tight", sans-serif;
+            font-style: normal;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #24D164; }
+    .home-section .main-content header .blue-div .task-today-row .task-today-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .home-section .main-content header .blue-div .task-today-row .task-today-title h2 {
+        font-family: "Inter Tight", sans-serif;
+        font-style: normal;
+        font-size: 1rem;
+        font-weight: 700;
+        color: #0F172A; }
+        .home-section .main-content header .blue-div .task-today-row .task-today-title h2 span {
+          font-family: "Inter Tight", sans-serif;
+          font-style: normal;
+          font-size: 1rem;
+          font-weight: 400;
+          color: #64748B; }
+      .home-section .main-content header .blue-div .task-today-row .task-today-title .see-all-btn a {
+        font-family: "Inter Tight", sans-serif;
+        font-style: normal;
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: #64748B;
+        text-decoration: none; }
+    .home-section .main-content header .blue-div .task-today-row .task-bar {
+      background-color: #ffffff;
+      padding: 1rem; }
+      .home-section .main-content header .blue-div .task-today-row .task-bar .task-left-site {
+        display: flex;
+        align-items: center;
+        gap: 1rem; }
+        .home-section .main-content header .blue-div .task-today-row .task-bar .task-left-site h3 {
+          font-family: "Inter Tight", sans-serif;
+          font-style: normal;
+          font-size: 0.9rem;
+          font-weight: 600;
+          color: #0F172A;
+          padding: 0;
+          margin: 0; }
+      .home-section .main-content header .blue-div .task-today-row .task-bar .task-right-site {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .home-section .main-content header .blue-div .task-today-row .task-bar .task-right-site h4 {
+          background-color: #FFFBEB;
+          color: #F6A723;
+          text-align: center;
+          font-size: 1rem;
+          font-family: "Inter Tight", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          max-width: fit-content;
+          padding: 1rem 1.3rem;
+          border-radius: 3rem;
+          margin: 0; }
+        .home-section .main-content header .blue-div .task-today-row .task-bar .task-right-site .task-img-multiple {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative; }
+          .home-section .main-content header .blue-div .task-today-row .task-bar .task-right-site .task-img-multiple .first-img {
+            position: relative; }
+            .home-section .main-content header .blue-div .task-today-row .task-bar .task-right-site .task-img-multiple .first-img img {
+              width: 30px; }
+          .home-section .main-content header .blue-div .task-today-row .task-bar .task-right-site .task-img-multiple .second-img {
+            position: absolute;
+            left: 70%; }
+            .home-section .main-content header .blue-div .task-today-row .task-bar .task-right-site .task-img-multiple .second-img img {
+              width: 30px; }
+    .home-section .main-content header .blue-div .wrapper {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12); }
+      .home-section .main-content header .blue-div .wrapper header {
+        display: flex;
+        align-items: center;
+        padding: 25px 30px 10px;
+        justify-content: space-between;
+        align-items: center; }
+        .home-section .main-content header .blue-div .wrapper header .current-date {
+          font-family: "Inter Tight", sans-serif;
+          font-style: normal;
+          font-size: 1rem;
+          color: #0F172A;
+          font-weight: 700;
+          margin: 0;
+          padding: 0; }
+        .home-section .main-content header .blue-div .wrapper header .icons {
+          display: flex; }
+          .home-section .main-content header .blue-div .wrapper header .icons span {
+            height: 38px;
+            width: 38px;
+            margin: 0 1px;
+            cursor: pointer;
+            color: #878787;
+            text-align: center;
+            line-height: 38px;
+            font-size: 1.9rem;
+            user-select: none;
+            border-radius: 50%; }
+            .home-section .main-content header .blue-div .wrapper header .icons span:last-child {
+              margin-right: -10px; }
+            .home-section .main-content header .blue-div .wrapper header .icons span:hover {
+              background: #f2f2f2; }
+      .home-section .main-content header .blue-div .wrapper .calendar {
+        padding: 20px; }
+        .home-section .main-content header .blue-div .wrapper .calendar ul {
+          display: flex;
+          flex-wrap: wrap;
+          list-style: none;
+          text-align: center;
+          margin: 0;
+          padding: 0; }
+          .home-section .main-content header .blue-div .wrapper .calendar ul li {
+            color: #333;
+            width: calc(100% / 7);
+            font-size: 1.07rem;
+            font-weight: 500;
+            cursor: default; }
+        .home-section .main-content header .blue-div .wrapper .calendar .days {
+          margin-bottom: 20px; }
+          .home-section .main-content header .blue-div .wrapper .calendar .days li {
+            z-index: 1;
+            cursor: pointer;
+            position: relative;
+            margin-top: 30px; }
+            .home-section .main-content header .blue-div .wrapper .calendar .days li::before {
+              position: absolute;
+              content: "";
+              left: 50%;
+              top: 50%;
+              height: 40px;
+              width: 40px;
+              z-index: -1;
+              border-radius: 50%;
+              transform: translate(-50%, -50%); }
+            .home-section .main-content header .blue-div .wrapper .calendar .days li.inactive {
+              color: #aaa; }
+            .home-section .main-content header .blue-div .wrapper .calendar .days li.active {
+              color: #fff; }
+              .home-section .main-content header .blue-div .wrapper .calendar .days li.active::before {
+                background: #9B59B6; }
+    .home-section .main-content header .blue-div .message-div {
+      background-color: #ffffff;
+      padding: 1rem;
+      border-radius: 0.8rem; }
+      .home-section .main-content header .blue-div .message-div h3 {
+        font-family: "Inter Tight", sans-serif;
+        font-style: normal;
+        font-size: 1rem;
+        font-weight: 700; }
+      .home-section .main-content header .blue-div .message-div .client-msg {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .home-section .main-content header .blue-div .message-div .client-msg .client-wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: start;
+          gap: 1.8rem; }
+          .home-section .main-content header .blue-div .message-div .client-msg .client-wrapper .client-img {
+            position: relative; }
+            .home-section .main-content header .blue-div .message-div .client-msg .client-wrapper .client-img span {
+              position: absolute;
+              width: 15px;
+              height: 15px;
+              background-color: #24D164;
+              border-radius: 3.1rem;
+              right: -5px;
+              bottom: 0;
+              border: 2px solid #fff; }
+          .home-section .main-content header .blue-div .message-div .client-msg .client-wrapper .client-name h3 {
+            font-family: "Inter Tight", sans-serif;
+            font-style: normal;
+            font-size: 0.8rem;
+            font-weight: 700; }
+          .home-section .main-content header .blue-div .message-div .client-msg .client-wrapper .client-name p {
+            text-decoration: none;
+            font-weight: 500;
+            color: #2563EB; }
+      .home-section .main-content header .blue-div .message-div .see-all-btn a {
+        font-size: 0.8rem;
+        font-weight: 700;
+        font-family: "Inter Tight", sans-serif;
+        font-style: normal;
+        color: #0F172A;
+        text-decoration: none;
+        text-align: center;
+        margin: 3rem auto 1rem;
+        width: 100%;
+        display: block; }
+
+@media (max-width: 1240px) {
+  .sidebar {
+    width: 60px; }
+  .sidebar.active {
+    width: 220px; }
+    .sidebar.active ~ .home-section {
+      left: 220px;
+      width: calc(100% - 220px);
+      overflow: hidden; }
+      .sidebar.active ~ .home-section nav {
+        width: calc(100% - 220px);
+        left: 220px; }
+  .home-section {
+    width: calc(100% - 60px);
+    left: 60px; }
+    .home-section nav {
+      width: calc(100% - 60px);
+      left: 60px; } }
+
+@media (max-width: 1150px) {
+  .home-content .sales-boxes {
+    flex-direction: column; }
+    .home-content .sales-boxes .box {
+      width: 100%;
+      overflow-x: scroll;
+      margin-bottom: 30px; }
+    .home-content .sales-boxes .top-sales {
+      margin: 0; } }
+
+@media (max-width: 1000px) {
+  .overview-boxes .box {
+    width: calc(100% / 2 - 15px);
+    margin-bottom: 15px; }
+  .inner-div-wrapper {
+    display: none !important; }
+  .blue-div .recent-project-div .project-card {
+    margin: 10px 0; }
+  .projects, .assigned, .closed {
+    padding: 1rem 0.7rem; }
+  .sidebarBtn {
+    position: absolute;
+    right: 5%; } }
+
+@media (max-width: 700px) {
+  nav .sidebar-button .dashboard {
+    display: none; }
+  nav .profile-details .admin_name {
+    display: none; }
+  nav .profile-details i {
+    display: none; }
+  .home-section nav .profile-details {
+    height: 50px;
+    min-width: 40px; }
+  .home-content .sales-boxes .sales-details {
+    width: 560px; } }
+
+@media (max-width: 550px) {
+  .overview-boxes .box {
+    width: 100%;
+    margin-bottom: 15px; }
+  .sidebar.active ~ .home-section nav .profile-details {
+    display: none; } }
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 0; }
+  .sidebar.active {
+    width: 60px; }
+    .sidebar.active ~ .home-section {
+      left: 60px;
+      width: calc(100% - 60px); }
+      .sidebar.active ~ .home-section nav {
+        left: 60px;
+        width: calc(100% - 60px); }
+  .home-section {
+    width: 100%;
+    left: 0; }
+    .home-section nav {
+      width: 100%;
+      left: 0; } }
+
+.days li:not(.active):hover::before {
+  background: #f2f2f2; }
+
+div#highcharts-r8k3px8-0 {
+  min-height: 320px !important;
+  height: 320px !important; }
+
+figure.highcharts-figure div#container {
+  height: 320px; }
+
+.home-section .right-site .sidebar-button .dashboard-text .p-text {
+  font-family: "Inter Tight", sans-serif;
+  font-style: normal;
+  font-size: 0.75rem;
+  font-weight: 400; }
+
+.home-section .sale-analytics-div {
+  padding: 1rem;
+  background-color: #F8FAFC; }
+  .home-section .sale-analytics-div .sales-cards-wrapper .sale-card {
+    background-color: #ffffff;
+    padding: 1.3rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px; }
+    .home-section .sale-analytics-div .sales-cards-wrapper .sale-card img {
+      background-color: #FFFBEB;
+      padding: 1rem;
+      border-radius: 0.75rem; }
+    .home-section .sale-analytics-div .sales-cards-wrapper .sale-card .sales-cards-text p {
+      font-family: "Inter Tight", sans-serif;
+      font-style: normal;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #64748B;
+      padding: 0;
+      margin: 0; }
+    .home-section .sale-analytics-div .sales-cards-wrapper .sale-card .sales-cards-text h4 {
+      font-family: "Inter Tight", sans-serif;
+      font-style: normal;
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: #0F172A; }
+      .home-section .sale-analytics-div .sales-cards-wrapper .sale-card .sales-cards-text h4 span {
+        font-family: "Inter Tight", sans-serif;
+        font-style: normal;
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: #24D164; }

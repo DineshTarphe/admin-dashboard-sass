@@ -1,0 +1,60 @@
+.home-section{
+    .right-site{
+        .sidebar-button{
+            .dashboard-text{
+                .p-text{
+                    @include paragraph;
+                    font-size: 0.75rem;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .sale-analytics-div{
+        padding: 1rem;
+        background-color: $grayscale-50;
+
+        .sales-cards-wrapper{
+            .sale-card{
+                background-color: $white-color;
+                padding: 1.3rem;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 20px;
+
+                img{
+                    background-color: $secondary-amber-50;
+                    padding: 1rem;
+                    border-radius: 0.75rem;
+                }
+                .sales-cards-text{
+                    p{
+                        @include paragraph;
+                        font-size: 0.75rem;
+                        font-weight: 500;
+                        color: $grayscale-500;
+                        padding: 0;
+                        margin: 0;
+                    }
+                    h4{
+                        @include paragraph;
+                        font-size: 1.125rem;
+                        font-weight: 700;
+                        color: $grayscale-900;
+                        span{
+                            @include paragraph;
+                            font-size: 0.75rem;
+                            font-weight: 500;
+                            color: $secondary-algal-fuel-500-base;
+                        }
+                    }
+                }
+            }
+            .charts-sale{
+                
+                
+            }
+        }
+    }
+}

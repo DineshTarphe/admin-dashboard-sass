@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+        integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="dashboard-page">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 p-0 m-0">
+                    <input type="checkbox" id="nav-toggle">
+                    <div class="sidebar">
+                        <div class="sidebar-brand">
+                            <h2>
+                                <img src="./images/svg/logo-icon.svg">
+                                <span>Hiphonic</span>
+                            </h2>
+                        </div>
+                        <hr>
+                        <div class="sidebar-menu">
+                            <h4>Menu</h4>
+                            <ul>
+                                <li>
+                                    <a href="#" class="active"><span class="las la-igloo"></span>
+                                        <span>Dashboard</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="las la-users"></span>
+                                        <span>Customers</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="las la-clipboard-list"></span>
+                                        <span>Projects</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="las la-shipping-fast"></span>
+                                        <span>Orders</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="las la-receipt"></span>
+                                        <span>Inventory</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="las la-user-circle"></span>
+                                        <span>Accounts</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="las la-clipboard-list"></span>
+                                        <span>Tasks</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-10 col-md-12">
+                    <div class="main-content">
+                        <header>
+                            
+                            <div class="right-site">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-7 col-md-12">
+                                                <h2>
+                                                    <label for="nav-toggle">
+                                                        <span class="las la-bars"></span>
+                                                    </label>
+                                                    <span>Dashboard</span>
+                                                </h2>
+                                            </div>
+                                            <div class="col-lg-5 col-md-12">
+                                                <div class="inner-div-wrapper">
+                                                    <div class="search-bar">
+                                                        <input type="text" placeholder="Search...">
+                                                        <img src="./images/svg/search.svg">
+                                                    </div>
+                                                    <div class="dropdown notification">
+                                                        <button class="profile-div btn d-flex" type="button" id="dropdownMenuButton"
+                                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <div class="profile-img-div">
+                                                                <span class="btn__badge pulse-button ">
+                                                                    <img src="./images/svg/bell.svg">
+                                                                </span>
+                                                            </div>
+                                                        </button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#">Action</a>
+                                                            <a class="dropdown-item" href="#">Another action</a>
+                                                            <a class="dropdown-item" href="#">Something else here</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile-wrapper">
+                                                        <div class="dropdown">
+                                                            <button class="profile-div btn d-flex dropdown-toggle" type="button"
+                                                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="false">
+                                                                <div class="profile-img-div">
+                                                                    <img src="./images/profile-pic.png">
+                                                                </div>
+                                                                <div class="profile-text">
+                                                                    <h4>Angela L.</h4>
+                                                                    <p>Project Manager</p>
+                                                                </div>
+                                                            </button>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">Action</a>
+                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                                <a class="dropdown-item" href="sign-in.html">Logout</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blue-div">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="recent-project-div">
+                                            <h3>Recent Projects</h3>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-12">
+                                                    <div class="project-card">
+                                                        <div class="title-bar d-flex align-items-center justify-content-between">
+                                                            <h3>Hiphonic</h3>
+                                                            <div class="dropdown">
+                                                                <button class="recent-div btn d-flex" type="button" id="dropdownMenuButton"
+                                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <img src="./images/svg/dots.svg">
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                                    <a class="dropdown-item" href="#">Add</a>
+                                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="progress-div">
+                                                            <div class="label-text">
+                                                                <label class="d-block progress-txt" for="file">Progress</label>
+                                                                <label class="d-block progress-value" for="file">55 %</label>
+                                                            </div>
+                                                            <progress id="file1" value="55" max="100"> </progress>
+                                                        </div>
+                                                        <div class="last-selection-div">
+                                                            <div class="input-wrapper">
+                                                                <input type="checkbox" checked>
+                                                                <label><b>8</b>/<span>15</span></label>
+                                                            </div>
+                                                            <div class="task-img-multiple">
+                                                                <div class="first-img">
+                                                                    <img src="./images/1.png" width="24">
+                                                                </div>
+                                                                <div class="second-img">
+                                                                    <img src="./images/2.png" width="24">
+                                                                </div>
+                                                                <div class="third-img">
+                                                                    <img src="./images/3.png" width="24">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-12">
+                                                    <div class="project-card">
+                                                        <div class="title-bar d-flex align-items-center justify-content-between">
+                                                            <h3>SEO Analythics</h3>
+                                                            <div class="dropdown">
+                                                                <button class="recent-div btn d-flex" type="button" id="dropdownMenuButton"
+                                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <img src="./images/svg/dots.svg">
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                                    <a class="dropdown-item" href="#">Add</a>
+                                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="progress-div">
+                                                            <div class="label-text">
+                                                                <label class="d-block progress-txt" for="file">Progress</label>
+                                                                <label class="d-block progress-value" for="file">30 %</label>
+                                                            </div>
+                                                            <progress id="file2" value="30" max="100"> </progress>
+                                                        </div>
+                                                        <div class="last-selection-div">
+                                                            <div class="input-wrapper">
+                                                                <input type="checkbox" checked>
+                                                                <label><b>8</b>/<span>15</span></label>
+                                                            </div>
+                                                            <div class="task-img-multiple">
+                                                                <div class="first-img">
+                                                                    <img src="./images/1.png" width="24">
+                                                                </div>
+                                                                <div class="second-img">
+                                                                    <img src="./images/2.png" width="24">
+                                                                </div>
+                                                                <div class="third-img">
+                                                                    <img src="./images/3.png" width="24">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-12">
+                                                    <div class="project-card">
+                                                        <div class="title-bar d-flex align-items-center justify-content-between">
+                                                            <h3>Dibhub App</h3>
+                                                            <div class="dropdown">
+                                                                <button class="recent-div btn d-flex" type="button" id="dropdownMenuButton"
+                                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <img src="./images/svg/dots.svg">
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                                    <a class="dropdown-item" href="#">Add</a>
+                                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="progress-div">
+                                                            <div class="label-text">
+                                                                <label class="d-block progress-txt" for="file">Progress</label>
+                                                                <label class="d-block progress-value" for="file">89 %</label>
+                                                            </div>
+                                                            <progress id="file3" value="89" max="100"> </progress>
+                                                        </div>
+                                                        <div class="last-selection-div">
+                                                            <div class="input-wrapper">
+                                                                <input type="checkbox" checked>
+                                                                <label><b>8</b>/<span>15</span></label>
+                                                            </div>
+                                                            <div class="task-img-multiple">
+                                                                <div class="first-img">
+                                                                    <img src="./images/1.png" width="24">
+                                                                </div>
+                                                                <div class="second-img">
+                                                                    <img src="./images/2.png" width="24">
+                                                                </div>
+                                                                <div class="third-img">
+                                                                    <img src="./images/3.png" width="24">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="activity-row">
+                                            <div class="row">
+                                                <div class="col-lg-7 col-md-12">
+                                                    <div class="activity-graph">
+                                                        <h3>Activity</h3>
+                                                        <div class="activity-dropdown">
+                                                            <div class="dropdown">
+                                                                <button class="activity-div btn align-items-center d-flex dropdown-toggle"
+                                                                    type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                                                    aria-haspopup="true" aria-expanded="false">
+                                                                    Weekley
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                    <a class="dropdown-item" href="#">Weekley</a>
+                                                                    <a class="dropdown-item" href="#">Monthly</a>
+                                                                    <a class="dropdown-item" href="#">Yearly</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <figure class="highcharts-figure">
+                                                        <div id="container"></div>
+                                                    </figure>
+                                                </div>
+                                                <div class="col-lg-5 col-md-12">
+                                                    <div class="task-summary-wrapper">
+                                                        <div class="task-summary-div">
+                                                            <h3>Task Summary</h3>
+                                                            <div class="summary-dropdown">
+                                                                <div class="dropdown">
+                                                                    <button class="summary-div btn align-items-center d-flex " type="button"
+                                                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                                                        aria-expanded="false">
+                                                                        <img src="./images/svg/dots.svg">
+                                                                    </button>
+                                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#">Weekley</a>
+                                                                        <a class="dropdown-item" href="#">Monthly</a>
+                                                                        <a class="dropdown-item" href="#">Yearly</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="task-cards-wrapper">
+                                                            <div class="task-card projects">
+                                                                <img src="./images/svg/projects.svg">
+                                                                <div class="task-content">
+                                                                    <h4>Projects</h4>
+                                                                    <h3>40</h3>
+                                                                </div>
+                                                            </div>
+                                                            <div class="task-card assigned">
+                                                                <img src="./images/svg/assigned.svg">
+                                                                <div class="task-content">
+                                                                    <h4>Assigned</h4>
+                                                                    <h3>79</h3>
+                                                                </div>
+                                                            </div>
+                                                            <div class="task-card closed">
+                                                                <img src="./images/svg/closed.svg">
+                                                                <div class="task-content closed-content">
+                                                                    <h4>Closed</h4>
+                                                                    <h3>89</h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="completion-rate-div">
+                                                            <div class="rate-content">
+                                                                <p>On-time Completion Rate</p>
+                                                                <h2>95% <sub>+2,5%</sub></h2>
+                                                            </div>
+                                                            <div class="mini-line-graph">
+                        
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="task-today-row">
+                                            <div class="task-today-title">
+                                                <h2>Task Today <span>(10)</span></h2>
+                                                <div class="see-all-btn">
+                                                    <a href="javascript:void()">See All <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                            height="16" viewBox="0 0 16 16" fill="none">
+                                                            <path d="M6 4L10 8L6 12" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                        </svg></a>
+                                                </div>
+                                            </div>
+                                            <div class="task-bar">
+                                                <div class="row justify-content-between align-items-center">
+                                                    <div class="col-lg-8 col-md-12">
+                                                        <div class="task-left-site">
+                                                            <div class="input-checkbox">
+                                                                <input type="checkbox" checked>
+                                                            </div>
+                                                            <h3>Create userflow for Hisphonic Application Design</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-12">
+                                                        <div class="task-right-site">
+                                                            <h4>In Review</h4>
+                        
+                                                            <div class="task-img-multiple">
+                                                                <div class="first-img">
+                                                                    <img src="./images/1.png" width="24">
+                                                                </div>
+                                                                <div class="second-img">
+                                                                    <img src="./images/2.png" width="24">
+                                                                </div>
+                                                            </div>
+                                                            <div class="activity-dropdown">
+                                                                <div class="dropdown">
+                                                                    <button class="activity-div btn align-items-center d-flex " type="button"
+                                                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                                                        aria-expanded="false">
+                                                                        <img src="./images/svg/dots.svg">
+                                                                    </button>
+                                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#">Weekley</a>
+                                                                        <a class="dropdown-item" href="#">Monthly</a>
+                                                                        <a class="dropdown-item" href="#">Yearly</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="task-bar mt-3">
+                                                <div class="row justify-content-between align-items-center">
+                                                    <div class="col-lg-8 col-md-12">
+                                                        <div class="task-left-site">
+                                                            <div class="input-checkbox">
+                                                                <input type="checkbox">
+                                                            </div>
+                                                            <h3>Homepage design for Diphub Application</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-12">
+                                                        <div class="task-right-site">
+                                                            <h4>In Review</h4>
+                        
+                                                            <div class="task-img-multiple">
+                                                                <div class="first-img">
+                                                                    <img src="./images/1.png" width="24">
+                                                                </div>
+                                                                <div class="second-img">
+                                                                    <img src="./images/2.png" width="24">
+                                                                </div>
+                                                            </div>
+                                                            <div class="activity-dropdown">
+                                                                <div class="dropdown">
+                                                                    <button class="activity-div btn align-items-center d-flex " type="button"
+                                                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                                                        aria-expanded="false">
+                                                                        <img src="./images/svg/dots.svg">
+                                                                    </button>
+                                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#">Weekley</a>
+                                                                        <a class="dropdown-item" href="#">Monthly</a>
+                                                                        <a class="dropdown-item" href="#">Yearly</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="wrapper">
+                                            <header>
+                                                <p class="current-date"></p>
+                                                <div class="icons">
+                                                    <span id="prev" class="material-symbols-rounded"><i
+                                                            class="fa-solid fa-angle-left"></i></span>
+                                                    <span id="next" class="material-symbols-rounded"><i
+                                                            class="fa-solid fa-angle-right"></i></span>
+                                                </div>
+                                            </header>
+                                            <div class="calendar">
+                                                <ul class="weeks">
+                                                    <li>Sun</li>
+                                                    <li>Mon</li>
+                                                    <li>Tue</li>
+                                                    <li>Wed</li>
+                                                    <li>Thu</li>
+                                                    <li>Fri</li>
+                                                    <li>Sat</li>
+                                                </ul>
+                                                <ul class="days"></ul>
+                                            </div>
+                                        </div>
+                                        <div class="message-div mt-3">
+                                            <h3>Messages</h3>
+                                            <hr>
+                                            <div class="client-msg">
+                                                <div class="client-wrapper">
+                                                    <div class="client-img">
+                                                        <img src="./images/andreana.png">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="client-name">
+                                                        <h3>Andreana Viola</h3>
+                                                        <p>Hi, How are you today?</p>
+                                                    </div>
+                                                </div>
+                                                <div class="client-time">
+                                                    <p>08:30</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="client-msg">
+                                                <div class="client-wrapper">
+                                                    <div class="client-img">
+                                                        <img src="./images/andreana.png">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="client-name">
+                                                        <h3>Francesco Long</h3>
+                                                        <p>Hi <a class="instagram-hash" href="#">@Angel</a>, I hope you are doing well...</p>
+                                                    </div>
+                                                </div>
+                                                <div class="client-time">
+                                                    <p>07:00</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="client-msg">
+                                                <div class="client-wrapper">
+                                                    <div class="client-img">
+                                                        <img src="./images/andreana.png">
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="client-name">
+                                                        <h3>Alexandra Michu</h3>
+                                                        <p>Hi, How are you today?</p>
+                                                    </div>
+                                                </div>
+                                                <div class="client-time">
+                                                    <p>23/11</p>
+                                                </div>
+                                            </div>
+                                            <div class="see-all-btn">
+                                                <a href="javascript:void()">See All</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./js/custom.js"></script>
+<!-- Resources -->
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/series-label.js"></script>
+<!-- <script src="https://code.highcharts.com/modules/exporting.js"></script> -->
+<!-- <script src="https://code.highcharts.com/modules/export-data.js"></script> -->
+<!-- <script src="https://code.highcharts.com/modules/accessibility.js"></script> -->
+<script src="./js/charts.js"></script>
+<script src="./js/calender.js"></script>
+<script src="./js/menu.js"></script>
+
+
+</html>

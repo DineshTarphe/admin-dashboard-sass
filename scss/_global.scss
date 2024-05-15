@@ -1,0 +1,110 @@
+$primary-color:#2563EB;
+$white-color:#ffffff;
+$black-color:#000000;
+$font-inter: 'Inter Tight', sans-serif;
+$grayscale : #E2E8F0;
+$grayscale-50:#F8FAFC;
+$grayscale-200:#E2E8F0;
+$greyscale-300: #CBD5E1;
+$grayscale-400:#94A3B8;
+$grayscale-500:#64748B;
+$grayscale-900:#0F172A;
+$amber-400:#FBBF24;
+$secondary-algal-fuel-500-base: #24D164;
+$secondary-amber-50:#FFFBEB;
+$secondary-amber-500-base: #F6A723;
+$additional-emerald: #34D399;
+
+$glamour-pink :#ED4F9D;
+$glamour-pink-400: #F472B6;
+$additional-sky: #38BDF8;
+
+
+body{
+    overflow-x:hidden;
+    font-family: $font-inter;
+}
+// body.dark{
+//     $white-color:#000;
+//     $black-color:#fff;
+// }
+hr{
+    border-color: #bcd3eb;
+    border-width: 1px;
+}
+
+@mixin social-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    border: 1px solid #E2E8F0;
+    font-family: $font-inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    color: $black-color;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 0.8rem;
+}
+@mixin input-icon{
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    top: 30%;
+    background-position: center;
+    height: 1.5rem;
+    left: 3%;
+}
+@mixin paragraph{
+    font-family: $font-inter;
+    font-style: normal;
+}
+
+/*Input field signup, login*/
+$bg-img : ("username":url(../images/svg/username.svg),"email":url(../images/svg/email.svg),"password":url(../images/svg/password.svg));
+
+@each $name, $bg-img-url in $bg-img{
+    .#{$name}::before{
+        @include input-icon;
+        background-image: $bg-img-url;
+    }
+} 
+
+/*Cards Task Summary*/
+@mixin project-common-css{
+    padding: 1rem 1.5rem;
+    text-align: center;
+    border-radius: 0.8rem;
+}
+$bg-color : ("projects":$primary-color,"assigned":$additional-sky,"closed":$grayscale-50);
+
+
+@each $name, $bg-col in $bg-color{
+    .#{$name}{
+        @include project-common-css;
+        background-color: $bg-col;
+    }
+} 
+
+//default value $grayscale-900
+@mixin task-color($col:$grayscale-900){
+    font-size: 1rem;
+    font-weight: 700; 
+    padding: 0;
+    margin: 0;
+    padding-top: 0.7rem;
+    
+    @if $col == primary-color{
+        color: $white-color;
+    }
+    @else {
+        color: $grayscale-900;
+    }
+}
+
+@mixin sale-cards{
+    
+}

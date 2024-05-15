@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+        integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <img src="./images/svg/logo-icon.svg">
+            <span class="logo_name">Hiphonic</span>
+        </div>
+        <hr>
+        <!-- <p class="title p-0 m-0">Menu</p> -->
+        <ul class="nav-links">
+            <li>
+                <a href="#" class="active">
+                    <i class="las la-th-large"></i>
+                    <span class="links_name">Overview</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="lar la-check-square"></i>
+                    <span class="links_name">Analytics</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="las la-comment-dots"></i>
+                    <span class="links_name">Orders</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="las la-trophy"></i>
+                    <span class="links_name">Products</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="lar la-check-square"></i>
+                    <span class="links_name">Customers</span>
+                </a>
+            </li>
+            
+            
+        </ul>
+        <ul class="log_out">
+            <li>
+                <a href="#">
+                    <i class="las la-sign-out-alt"></i>
+                    <span class="links_name">Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="las la-sign-out-alt"></i>
+                    <span class="links_name">Log out</span>
+                </a>
+            </li>
+        </ul>
+        <hr>
+        <!-- <div class="project-main-wrapper">
+            <div class="projects-wrap d-flex align-items-center justify-content-between">
+                <p class="title p-0 m-0">Projects</p>
+                <a href="#"><img src="./images/svg/plus.svg"></a>
+            </div>
+            
+            <ul class="mt-3">
+                <li><span class="color1"></span><a href="#">Website Design</a></li>
+                <li><span class="color2"></span><a href="#">SEO Analythics</a></li>
+                <li><span class="color3"></span><a href="#">Hiphonic App</a></li>
+            </ul>
+        </div> -->
+    </div>
+    <section class="home-section">
+        <div class="main-content">
+            <header>
+                <div class="right-site">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row align-items-center">
+                                <div class="col-lg-7 col-md-12">
+                                    <div class="sidebar-button">
+                                        <i class="las la-bars sidebarBtn"></i>
+                                        <span class="dashboard dashboard-text">Overview<span class="d-block p-text">Detailed information about your store</span></span>
+                                        <!-- <p class="d-block">Detailed information about your store</p> -->
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-12">
+                                    <div class="inner-div-wrapper">
+                                        <div class="search-bar">
+                                            <input type="text" placeholder="Search anything...">
+                                            <img src="./images/svg/search.svg">
+                                        </div>
+                                        <div class="dropdown notification">
+                                            <button class="profile-div btn d-flex" type="button" id="dropdownMenuButton"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <div class="profile-img-div">
+                                                    <span class="btn__badge pulse-button ">
+                                                        <img src="./images/svg/bell.svg">
+                                                    </span>
+                                                </div>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </div>
+                                        <div class="profile-wrapper">
+                                            <div class="dropdown">
+                                                <button class="profile-div btn d-flex dropdown-toggle" type="button"
+                                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    <div class="profile-img-div">
+                                                        <img src="./images/profile-pic.png">
+                                                    </div>
+                                                    <div class="profile-text">
+                                                        <h4>Angela L.</h4>
+                                                        <p>Project Manager</p>
+                                                    </div>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="sign-in.html">Logout</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sale-analytics-div">
+                    <div class="sales-cards-wrapper">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-12">
+                                <div class="sale-card sale">
+                                    <img src="./images/svg/sales.svg">
+                                    <div class="sales-cards-text">
+                                        <p>Sales</p>
+                                        <h4>$1,234.00 <span>+12%</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-12">
+                                <div class="sale-card revenue">
+                                    <img src="./images/svg/revenue.svg">
+                                    <div class="sales-cards-text">
+                                        <p>Total Revenue</p>
+                                        <h4>$1,234.00 <span>+12%</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-12">
+                                <div class="sale-card return">
+                                    <img src="./images/svg/return.svg">
+                                    <div class="sales-cards-text">
+                                        <p>Return</p>
+                                        <h4>$956.00 <span>-5%</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-12">
+                                <div class="sale-card marketing">
+                                    <img src="./images/svg/marketing.svg">
+                                    <div class="sales-cards-text">
+                                        <p>Marketing</p>
+                                        <h4>5,566.01 <span>+15%</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-7 col-md-12">
+                                <div class="charts-sale">
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="col-lg-5 col-md-12">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/custom.js"></script>
+    <!-- Resources -->
+    <script src="https://code.highcharts.com/dashboards/dashboards.js"></script>
+    <script src="https://code.highcharts.com/dashboards/datagrid.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/dashboards/modules/dashboards-plugin.js"></script>
+    <script src="./js/charts.js"></script>
+    <script src="./js/calender.js"></script>
+    <script src="./js/menu.js"></script>
+
+</body>
+
+</html>

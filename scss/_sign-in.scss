@@ -1,0 +1,53 @@
+.sign-in-page{
+    .white-div{
+        .white-text{
+            h3{
+                padding-bottom:0; 
+            }
+            p{
+                @include paragraph;
+                font-size: 0.9rem;
+                font-weight: 400;
+                color: $grayscale-500;
+                padding-top:0.8rem ;
+            }
+        }
+        form{
+            .password-bottom-div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .checkbox-div{
+                    width: 100%;
+                    label{
+                        @include paragraph;
+                        font-size: 0.9rem;
+                        font-weight: 500;
+                        color: $grayscale-900;
+                    }
+                }
+                .forgot-password{
+                    width: 100%;
+                    text-align: right;
+                    a{
+                        @include paragraph;
+                        font-size: 0.9rem;
+                        font-weight: 700;
+                        color: $primary-color;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .form-control{
+                &.password{
+                    &::before{
+                        top: 30%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
